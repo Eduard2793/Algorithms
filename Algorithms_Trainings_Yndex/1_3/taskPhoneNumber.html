@@ -1,0 +1,120 @@
+<div class="problem-statement">
+   <div class="header">
+      <h1 class="title">C. Телефонные номера</h1>
+      <table>
+         <tbody><tr class="time-limit">
+            <td class="property-title">Ограничение времени</td>
+            <td>1&nbsp;секунда</td>
+         </tr>
+         <tr class="memory-limit">
+            <td class="property-title">Ограничение памяти</td>
+            <td>64Mb</td>
+         </tr>
+         <tr class="input-file">
+            <td class="property-title">Ввод</td>
+            <td colspan="1">стандартный ввод или input.txt</td>
+         </tr>
+         <tr class="output-file">
+            <td class="property-title">Вывод</td>
+            <td colspan="1">стандартный вывод или output.txt</td>
+         </tr>
+      </tbody></table>
+   </div>
+   <h2></h2>
+   <div class="legend"><span style="">
+         <p>Телефонные номера в адресной книге мобильного телефона имеют
+ один из следующих форматов: +7&lt;код&gt;&lt;номер&gt; 
+8&lt;код&gt;&lt;номер&gt; &lt;номер&gt;
+            где &lt;номер&gt;&nbsp;— это семь цифр, а &lt;код&gt;&nbsp;—
+ это три цифры или три цифры в круглых скобках. Если код не указан, то 
+считается, что
+            он равен 495. Кроме того, в записи телефонного номера может 
+стоять знак “-” между любыми двумя цифрами (см. пример). На данный
+            момент в адресной книге телефона Васи записано всего три 
+телефонных номера, и он хочет записать туда еще один. Но он не может
+            понять, не записан ли уже такой номер в телефонной книге. 
+Помогите ему! Два телефонных номера совпадают, если у них равны
+            коды и равны номера. Например, +7(916)0123456 и 
+89160123456&nbsp;— это один и тот же номер. 
+         </p></span></div>
+   <h2>Формат ввода</h2>
+   <div class="input-specification"><span style="">
+         <p>В первой строке входных данных записан номер телефона, 
+который Вася хочет добавить в адресную книгу своего телефона. В 
+следующих
+            трех строках записаны три номера телефонов, которые уже 
+находятся в адресной книге телефона Васи. Гарантируется, что каждая
+            из записей соответствует одному из трех приведенных в 
+условии форматов. 
+         </p></span></div>
+   <h2>Формат вывода</h2>
+   <div class="output-specification"><span style="">
+         <p>Для каждого телефонного номера в адресной книге выведите YES (заглавными буквами), если он совпадает с тем телефонным номером,
+            который Вася хочет добавить в адресную книгу или NO (заглавными буквами) в противном случае. 
+         </p></span></div>
+   <h3>Пример 1</h3>
+   <table class="sample-tests">
+      <thead>
+         <tr>
+            <th>Ввод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_input i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать ввод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="C.%20%D0%A2%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%201%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать ввод"></span></button></div></th>
+            <th>Вывод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_output i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать вывод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="C.%20%D0%A2%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%201%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать вывод"></span></button></div></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><pre>8(495)430-23-97
++7-4-9-5-43-023-97
+4-3-0-2-3-9-7
+8-495-430
+</pre></td>
+            <td><pre>YES
+YES
+NO
+</pre></td>
+         </tr>
+      </tbody>
+   </table>
+   <h3>Пример 2</h3>
+   <table class="sample-tests">
+      <thead>
+         <tr>
+            <th>Ввод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_input i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать ввод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="C.%20%D0%A2%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%201%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать ввод"></span></button></div></th>
+            <th>Вывод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_output i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать вывод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="C.%20%D0%A2%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%201%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать вывод"></span></button></div></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><pre>86406361642
+83341994118
+86406361642
+83341994118
+</pre></td>
+            <td><pre>NO
+YES
+NO
+</pre></td>
+         </tr>
+      </tbody>
+   </table>
+   <h3>Пример 3</h3>
+   <table class="sample-tests">
+      <thead>
+         <tr>
+            <th>Ввод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_input i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать ввод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="C.%20%D0%A2%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%201%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать ввод"></span></button></div></th>
+            <th>Вывод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_output i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать вывод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="C.%20%D0%A2%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%201%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать вывод"></span></button></div></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><pre>+78047952807
++78047952807
++76147514928
+88047952807
+</pre></td>
+            <td><pre>YES
+NO
+YES
+</pre></td>
+         </tr>
+      </tbody>
+   </table>

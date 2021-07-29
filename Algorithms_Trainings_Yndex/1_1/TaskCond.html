@@ -1,0 +1,93 @@
+<div class="problem-statement">
+   <div class="header">
+      <h1 class="title">A. Кондиционер</h1>
+      <table>
+         <tbody><tr class="time-limit">
+            <td class="property-title">Ограничение времени</td>
+            <td>1&nbsp;секунда</td>
+         </tr>
+         <tr class="memory-limit">
+            <td class="property-title">Ограничение памяти</td>
+            <td>64Mb</td>
+         </tr>
+         <tr class="input-file">
+            <td class="property-title">Ввод</td>
+            <td colspan="1">стандартный ввод или input.txt</td>
+         </tr>
+         <tr class="output-file">
+            <td class="property-title">Вывод</td>
+            <td colspan="1">стандартный вывод или output.txt</td>
+         </tr>
+      </tbody></table>
+   </div>
+   <h2></h2>
+   <div class="legend"><span style="">
+         <p>В офисе, где работает программист Петр, установили кондиционер нового типа. Этот кондиционер отличается особой простотой в
+            управлении. У кондиционера есть всего лишь два управляемых параметра: желаемая температура и режим работы.
+         </p></span><p>Кондиционер может работать в следующих четырех режимах:</p>
+      <p>«freeze» — охлаждение. В этом режиме кондиционер может только уменьшать температуру. Если температура в комнате и так не больше
+         желаемой, то он выключается.
+      </p>
+      <p>«heat» — нагрев. В этом режиме кондиционер может только увеличивать температуру. Если температура в комнате и так не меньше
+         желаемой, то он выключается.
+      </p>
+      <p>«auto» — автоматический режим. В этом режиме кондиционер может 
+как увеличивать, так и уменьшать температуру в комнате до желаемой.</p>
+      <p>«fan» — вентиляция. В этом режиме кондиционер осуществляет только вентиляцию воздуха и не изменяет температуру в комнате.</p>
+      <p>Кондиционер достаточно мощный, поэтому при настройке на правильный режим работы он за час доводит температуру в комнате до
+         желаемой.
+      </p>
+      <p>Требуется написать программу, которая по заданной температуре в комнате <span class="tex-math-text">t<sub>room</sub></span>, установленным на кондиционере желаемой температуре <span class="tex-math-text">t<sub>cond</sub></span> и режиму работы определяет температуру, которая установится в комнате через час.
+      </p>
+   </div>
+   <h2>Формат ввода</h2>
+   <div class="input-specification"><span style="">
+         <p>Первая строка входного файла содержит два целых числа troom, и tcond, разделенных ровно одним пробелом (<span class="tex-math-text">–50 ≤ t<sub>room</sub> ≤ 50</span>, <span class="tex-math-text">–50 ≤ t<sub>cond</sub> ≤ 50</span>).
+         </p></span><p>Вторая строка содержит одно слово, записанное строчными буквами латинского алфавита — режим работы кондиционера.</p>
+   </div>
+   <h2>Формат вывода</h2>
+   <div class="output-specification"><span style="">
+         <p>Выходной файл должен содержать одно целое число — температуру, которая установится в комнате через час.</p></span><p></p>
+   </div>
+   <h3>Пример 1</h3>
+   <table class="sample-tests">
+      <thead>
+         <tr>
+            <th>Ввод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_input i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать ввод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="A.%20%D0%9A%D0%BE%D0%BD%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%201%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать ввод"></span></button></div></th>
+            <th>Вывод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_output i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать вывод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="A.%20%D0%9A%D0%BE%D0%BD%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%201%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать вывод"></span></button></div></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><pre>10 20
+heat
+</pre></td>
+            <td><pre>20
+</pre></td>
+         </tr>
+      </tbody>
+   </table>
+   <h3>Пример 2</h3>
+   <table class="sample-tests">
+      <thead>
+         <tr>
+            <th>Ввод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_input i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать ввод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="A.%20%D0%9A%D0%BE%D0%BD%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%201%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать ввод"></span></button></div></th>
+            <th>Вывод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_output i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать вывод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="A.%20%D0%9A%D0%BE%D0%BD%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%201%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать вывод"></span></button></div></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><pre>10 20
+freeze
+</pre></td>
+            <td><pre>10
+</pre></td>
+         </tr>
+      </tbody>
+   </table>
+   <h2>Примечания</h2>
+   <div class="notes"><span style="">
+         <p>В первом примере кондиционер находится в режиме нагрева. Через час он нагреет комнату до желаемой температуры в 20 градусов.</p></span><p>Во втором примере кондиционер находится в режиме охлаждения. Поскольку температура в комнате ниже, чем желаемая, кондиционер
+         самостоятельно выключается и температура в комнате не поменяется.
+      </p>
+   </div>

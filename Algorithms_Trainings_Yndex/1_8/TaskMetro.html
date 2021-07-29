@@ -1,0 +1,96 @@
+<div class="problem-statement">
+   <div class="header">
+      <h1 class="title">H. Метро</h1>
+      <table>
+         <tbody><tr class="time-limit">
+            <td class="property-title">Ограничение времени</td>
+            <td>1&nbsp;секунда</td>
+         </tr>
+         <tr class="memory-limit">
+            <td class="property-title">Ограничение памяти</td>
+            <td>64Mb</td>
+         </tr>
+         <tr class="input-file">
+            <td class="property-title">Ввод</td>
+            <td colspan="1">стандартный ввод или input.txt</td>
+         </tr>
+         <tr class="output-file">
+            <td class="property-title">Вывод</td>
+            <td colspan="1">стандартный вывод или output.txt</td>
+         </tr>
+      </tbody></table>
+   </div>
+   <h2></h2>
+   <div class="legend"><span style="">
+         <p>На некоторых кросс-платформенных станциях метро (как, 
+например, «Третьяковская») на разные стороны платформы приходят поезда 
+разных направлений. Таня договорилась встретиться с подругой на такой 
+станции,
+            но поскольку подруга приехала из другого часового пояса, то 
+из-за джетлага сильно проспала, и Тане пришлось долго её ждать.
+            Поезда всегда ходят точно по расписанию, и Таня знает, что 
+поезд стоит на платформе ровно одну минуту, а интервал между поездами
+            (время, в течение которого поезда у платформы нет) 
+составляет <span class="tex-math-text">a</span> минут для поездов на первом пути и <span class="tex-math-text">b</span> минут для поездов на втором пути. То есть на первый путь приезжает поезд и стоит одну минуту, затем в течение <span class="tex-math-text">a</span> минут поезда у платформы нет, затем в течение одной минуты у платформы стоит следующий поезд и т.&nbsp;д. 
+         </p></span><p>Пока Таня стояла на платформе, она насчитала <span class="tex-math-text">n</span> поездов на первом пути и <span class="tex-math-text">m</span> поездов на втором пути. Определите минимальное и максимальное время, которое Таня могла провести на платформе, или сообщите,
+         что она точно сбилась со счёта. 
+      </p>
+      <p>Все поезда, которые видела Таня, она наблюдала в течение всей 
+минуты, то есть Таня не приходит и не уходит с платформы посередине
+         той минуты, когда поезд стоит на платформе.
+      </p>
+   </div>
+   <h2>Формат ввода</h2>
+   <div class="input-specification"><span style="">
+         <p>Первая строка входных данных содержит число <span class="tex-math-text">a</span>&nbsp;— интервал между поездами на первом пути. Вторая строка содержит число <span class="tex-math-text">b</span>&nbsp;— интервал между поездами на втором пути. Третья строка содержит число <span class="tex-math-text">n</span>&nbsp;— количество поездов на первом пути, которые увидела Таня. Четвёртая строка содержит число <span class="tex-math-text">m</span>&nbsp;— количество поездов на втором пути, которые увидела Таня. Все числа&nbsp;— целые, от 1 до <span class="tex-math-text">1000</span>.
+         </p></span></div>
+   <h2>Формат вывода</h2>
+   <div class="output-specification"><span style="">
+         <p>Программа должна вывести два числа: минимальное и максимальное время в минутах, которое Таня могла стоять на платформе, или
+            одно число <span class="tex-math-text">-1</span>, если Таня точно ошиблась. 
+         </p></span></div>
+   <h3>Пример 1</h3>
+   <table class="sample-tests">
+      <thead>
+         <tr>
+            <th>Ввод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_input i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать ввод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="H.%20%D0%9C%D0%B5%D1%82%D1%80%D0%BE%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%201%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать ввод"></span></button></div></th>
+            <th>Вывод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_output i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать вывод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="H.%20%D0%9C%D0%B5%D1%82%D1%80%D0%BE%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%201%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать вывод"></span></button></div></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><pre>1
+3
+3
+2
+</pre></td>
+            <td><pre>5 7
+</pre></td>
+         </tr>
+      </tbody>
+   </table>
+   <h3>Пример 2</h3>
+   <table class="sample-tests">
+      <thead>
+         <tr>
+            <th>Ввод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_input i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать ввод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="H.%20%D0%9C%D0%B5%D1%82%D1%80%D0%BE%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%201%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать ввод"></span></button></div></th>
+            <th>Вывод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_output i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать вывод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="H.%20%D0%9C%D0%B5%D1%82%D1%80%D0%BE%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%201%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать вывод"></span></button></div></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><pre>1
+5
+1
+2
+</pre></td>
+            <td><pre>-1
+</pre></td>
+         </tr>
+      </tbody>
+   </table>
+   <h2>Примечания</h2>
+   <div class="notes"><span style="">
+         <p>В первом примере по первому пути поезда ходят через 1 
+минуту. По второму&nbsp;— через 3. Стоя на платформе 5, 6 или 7 минут, 
+Таня могла насчитать 3 поезда на первом пути и 2 на втором.</p></span></div>

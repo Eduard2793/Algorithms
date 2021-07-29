@@ -1,0 +1,116 @@
+<div class="problem-statement">
+   <div class="header">
+      <h1 class="title">E. Чемпионат по метанию коровьих лепешек</h1>
+      <table>
+         <tbody><tr class="time-limit">
+            <td class="property-title">Ограничение времени</td>
+            <td>1&nbsp;секунда</td>
+         </tr>
+         <tr class="memory-limit">
+            <td class="property-title">Ограничение памяти</td>
+            <td>64Mb</td>
+         </tr>
+         <tr class="input-file">
+            <td class="property-title">Ввод</td>
+            <td colspan="1">стандартный ввод или input.txt</td>
+         </tr>
+         <tr class="output-file">
+            <td class="property-title">Вывод</td>
+            <td colspan="1">стандартный вывод или output.txt</td>
+         </tr>
+      </tbody></table>
+   </div>
+   <h2></h2>
+   <div class="legend"><span style="">
+         <p>Ежегодный турнир "Веселый коровяк" - по метанию коровьих лепешек на дальность - прошел 8-9 июля в селе Крылово Осинского района
+            Пермского края. 
+         </p></span><p>Участники соревнований кидают "снаряд" - 
+спрессованный навоз, выбирая его из заранее заготовленной кучи. Желающих
+ поупражняться
+         в силе броска традиционно очень много - как мужчин, так и 
+женщин. Каждую лепешку, которую метнули участники "Веселого коровяка",
+         внимательно осматривали женщины в костюмах коров и тщательно 
+замеряли расстояние. 
+      </p>
+      <p>Соревнования по метанию коровьих лепешек проводятся в Пермском крае с 2009 года. </p>
+      <p><img class="user-image" src="E.%20%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0%D1%82%20%D0%BF%D0%BE%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BA%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B8%D1%85%20%D0%BB%D0%B5%D0%BF%D0%B5%D1%88%D0%B5%D0%BA%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/statement-image.jpg"> 
+      </p>
+      <p>К сожалению, после чемпионата потерялись записи с фамилиями участников, остались только записи о длине броска в том порядке,
+         в котором их совершали участники. 
+      </p>
+      <p>Трактиорист Василий помнит три факта: </p>
+      <p>1) Число метров, на которое он метнул лепешку, оканчивалось на 5 </p>
+      <p>2) Один из победителей чемпионата метал лепешку до Василия </p>
+      <p>3) Участник, метавший лепешку сразу после Василия, метнул ее на меньшее количество метров </p>
+      <p>Будем считать, что участник соревнования занял k-е место, если ровно (k − 1) участников чемпионата метнули лепешку строго
+         дальше, чем он. 
+      </p>
+      <p>Какое максимально высокое место мог занять Василий?</p>
+   </div>
+   <h2>Формат ввода</h2>
+   <div class="input-specification"><span style="">
+         <p>Первая строка входного файла содержит целое число n — количество участников чемпионата по метанию лепешек (<span class="tex-math-text">3 ≤ n ≤ 10<sup>5</sup></span>). 
+         </p></span><p>Вторая строка входного файла содержит n положительных целых чисел, каждое из которых не превышает 1000, — дальность броска
+         участников чемпионата, приведенные в том порядке, в котором происходило метание.
+      </p>
+   </div>
+   <h2>Формат вывода</h2>
+   <div class="output-specification"><span style="">
+         <p>Выведите самое высокое место, которое мог занять тракторист Василий. Если не существует ни одного участника чемпионата, который
+            удовлетворяет, описанным выше условиям, выведите число 0. 
+         </p></span><p></p>
+   </div>
+   <h3>Пример 1</h3>
+   <table class="sample-tests">
+      <thead>
+         <tr>
+            <th>Ввод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_input i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать ввод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="E.%20%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0%D1%82%20%D0%BF%D0%BE%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BA%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B8%D1%85%20%D0%BB%D0%B5%D0%BF%D0%B5%D1%88%D0%B5%D0%BA%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать ввод"></span></button></div></th>
+            <th>Вывод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_output i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать вывод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="E.%20%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0%D1%82%20%D0%BF%D0%BE%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BA%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B8%D1%85%20%D0%BB%D0%B5%D0%BF%D0%B5%D1%88%D0%B5%D0%BA%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать вывод"></span></button></div></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><pre>7
+10 20 15 10 30 5 1
+</pre></td>
+            <td><pre>6
+</pre></td>
+         </tr>
+      </tbody>
+   </table>
+   <h3>Пример 2</h3>
+   <table class="sample-tests">
+      <thead>
+         <tr>
+            <th>Ввод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_input i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать ввод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="E.%20%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0%D1%82%20%D0%BF%D0%BE%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BA%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B8%D1%85%20%D0%BB%D0%B5%D0%BF%D0%B5%D1%88%D0%B5%D0%BA%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать ввод"></span></button></div></th>
+            <th>Вывод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_output i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать вывод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="E.%20%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0%D1%82%20%D0%BF%D0%BE%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BA%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B8%D1%85%20%D0%BB%D0%B5%D0%BF%D0%B5%D1%88%D0%B5%D0%BA%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать вывод"></span></button></div></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><pre>3
+15 15 10
+</pre></td>
+            <td><pre>1
+</pre></td>
+         </tr>
+      </tbody>
+   </table>
+   <h3>Пример 3</h3>
+   <table class="sample-tests">
+      <thead>
+         <tr>
+            <th>Ввод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_input i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать ввод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="E.%20%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0%D1%82%20%D0%BF%D0%BE%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BA%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B8%D1%85%20%D0%BB%D0%B5%D0%BF%D0%B5%D1%88%D0%B5%D0%BA%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать ввод"></span></button></div></th>
+            <th>Вывод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_output i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать вывод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="E.%20%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0%D1%82%20%D0%BF%D0%BE%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BA%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B8%D1%85%20%D0%BB%D0%B5%D0%BF%D0%B5%D1%88%D0%B5%D0%BA%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%20%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0%D0%BC%20%D0%B8%D1%8E%D0%BD%D1%8C%202021,%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%82_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать вывод"></span></button></div></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><pre>3
+10 15 20
+</pre></td>
+            <td><pre>0
+</pre></td>
+         </tr>
+      </tbody>
+   </table>
